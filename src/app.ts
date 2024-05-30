@@ -9,7 +9,7 @@ dotenv.config();
 
 // Create Express app
 const app = express();
-const port = process.env.PORT
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
